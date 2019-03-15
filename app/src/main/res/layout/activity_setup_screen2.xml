@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupScreen1">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_60percent"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_70percent"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:inAnimation="@android:anim/fade_in"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_60percent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/setup_screen_1_p1_imgDescription"
+                android:src="@drawable/ic_polymer_blue_800_24dp" />
+
+            <TextView
+                style="@style/SetupHeading"
+                android:text="@string/setup_screen_1_p1_heading" />
+
+            <TextView
+                style="@style/SetupBodyText"
+                android:text="@string/setup_screen_1_p1_bodyText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/setup_screen_1_p1_imgDescription"
+                android:src="@drawable/ic_polymer_blue_800_24dp" />
+
+            <TextView
+                style="@style/SetupHeading"
+                android:text="@string/setup_screen_1_p2_heading" />
+
+            <TextView
+                style="@style/SetupBodyText"
+                android:text="@string/setup_screen_1_p2_bodyText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/setup_screen_1_p3_imgDescription"
+                android:src="@drawable/ic_polymer_blue_800_24dp" />
+
+            <TextView
+                style="@style/SetupHeading"
+                android:text="@string/setup_screen_1_p3_heading" />
+
+            <TextView
+                style="@style/SetupBodyText"
+                android:text="@string/setup_screen_1_p3_bodyText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/setup_screen_1_p4_imgDescription"
+                android:src="@drawable/ic_polymer_blue_800_24dp" />
+
+            <TextView
+                style="@style/SetupHeading"
+                android:text="@string/setup_screen_1_p4_heading" />
+
+            <TextView
+                style="@style/SetupBodyText"
+                android:text="@string/setup_screen_1_p4_bodyText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/setup_screen_1_p5_imgDescription"
+                android:src="@drawable/ic_polymer_blue_800_24dp" />
+
+            <TextView
+                style="@style/SetupHeading"
+                android:text="@string/setup_screen_1_p5_heading" />
+
+            <TextView
+                style="@style/SetupBodyText"
+                android:text="@string/setup_screen_1_p5_bodyText" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70percent"
+        app:layout_constraintTop_toTopOf="@id/guideline_60percent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/btn_previous_description"
+            android:onClick="previousView"
+            android:src="@drawable/ic_chevron_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/btn_next_description"
+            android:onClick="nextView"
+            android:src="@drawable/ic_chevron_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.545" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_70percent">
+
+        <Button
+            style="@style/BtnGetStartedHighlighted"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

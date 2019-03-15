@@ -41,7 +41,8 @@
 
             app:layout_constraintStart_toEndOf="@id/guideline_left_15percent"
             app:layout_constraintEnd_toEndOf="@id/guideline_left_85percent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="nextScreen"/>
 
         <TextView
             android:id="@+id/scan_text"

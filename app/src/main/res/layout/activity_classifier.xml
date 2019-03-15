@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassifierActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_80percent"
+        style="@style/HorizontalGuideline"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <!--
+    Important notice! : Instead of a "ImageView" element,
+    the line below should contain a "com.camerakit.CameraKitView".
+    However, it requires API 24 to be used which is currently
+    unavailable to be used by my current device (rip Samsung J1 ;-;)
+    TODO: Change the project API to 24 and replace the object below with "com.camerakit.CameraKitView"
+    -->
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="0dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_80percent"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_80percent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_bottom_20percent"
+            style="@style/HorizontalGuideline"
+            app:layout_constraintGuide_percent="0.2"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_bottom_80percent"
+            style="@style/HorizontalGuideline"
+            app:layout_constraintGuide_percent="0.8"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_bottom_10percent"
+            style="@style/VerticalGuideline"
+            app:layout_constraintGuide_percent="0.1"/>
+
+        <ImageView
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:contentDescription="camera_input"
+            app:srcCompat="@android:drawable/alert_dark_frame"
+            app:layout_constraintStart_toEndOf="@id/guideline_bottom_10percent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_bottom_20percent"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_80percent"/>
+
+        <ImageButton
+            android:id="@+id/capture"
+            pp:layout_constraintTop_toTopOf="@+id/guideline_bottom_20percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Capture"
+            android:src="@drawable/ic_polymer_blue_800_24dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline_bottom_20percent"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_80percent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

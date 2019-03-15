@@ -8,9 +8,7 @@
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline_80percent"
-        android:layout_width="1dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        style="@style/HorizontalGuideline"
         app:layout_constraintGuide_percent="0.7" />
 
     <android.support.constraint.ConstraintLayout

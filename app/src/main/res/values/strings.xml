@@ -29,11 +29,15 @@
     <string name="setup_screen_2_p1_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
 
     <string name="setup_screen_2_p2_imgDescription">Illustration of a Braille Reader</string>
-    <string name="setup_screen_2_p2_heading">Select your device below:</string>
+    <string name="setup_screen_2_p2_heading">Select your device below</string>
     <string name="setup_screen_2_p2_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
 
     <string name="setup_screen_2_p3_imgDescription">Illustration of a Braille Reader</string>
     <string name="setup_screen_2_p3_heading">Device connected successfully!</string>
     <string name="setup_screen_2_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
+    <string name="setup_screen_3_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_3_heading">Select a narration voice</string>
+    <string name="setup_screen_3_bodyText">This voice will be used for reading documents out-loud.</string>
 
 </resources>

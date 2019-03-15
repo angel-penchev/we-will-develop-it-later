@@ -37,7 +37,7 @@ public class SetupScreen2 extends AppCompatActivity {
     }
 
     public void nextScreen(View v) {
-        Intent intent = new Intent(SetupScreen2.this, SetupScreen1.class);
+        Intent intent = new Intent(SetupScreen2.this, SetupScreen3.class);
         startActivity(intent);
     }
 }

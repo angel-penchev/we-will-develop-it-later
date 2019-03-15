@@ -21,7 +21,7 @@ public class SetupScreen1 extends AppCompatActivity {
         this.getSupportActionBar().hide();
 
         // Creates the view flipper
-        viewFlipper = findViewById(R.id.view_flipper);
+        viewFlipper = findViewById(R.id.setup_screen_1_view_flipper);
     }
 
     public void previousView(View v) {

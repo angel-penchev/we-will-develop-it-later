@@ -21,7 +21,7 @@
 
 
         <ViewFlipper
-            android:id="@+id/view_flipper"
+            android:id="@+id/setup_screen_1_view_flipper"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

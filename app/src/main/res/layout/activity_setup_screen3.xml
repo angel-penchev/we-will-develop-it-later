@@ -62,7 +62,7 @@
             <TextView
                 android:id="@+id/heading"
                 style="@style/SetupHeading"
-                android:text="@string/setup_screen_4_heading"
+                android:text="@string/setup_screen_3_heading"
                 app:layout_constraintEnd_toEndOf="@id/guideline_top_layout_vertical_90percent"
                 app:layout_constraintStart_toStartOf="@id/guideline_top_layout_vertical_10percent"
                 app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_60percent" />
@@ -70,7 +70,7 @@
             <TextView
                 android:id="@+id/body_text"
                 style="@style/SetupBodyText"
-                android:text="@string/setup_screen_4_bodyText"
+                android:text="@string/setup_screen_3_bodyText"
                 app:layout_constraintEnd_toEndOf="@id/guideline_top_layout_vertical_90percent"
                 app:layout_constraintStart_toStartOf="@id/guideline_top_layout_vertical_10percent"
                 app:layout_constraintTop_toBottomOf="@id/heading" />

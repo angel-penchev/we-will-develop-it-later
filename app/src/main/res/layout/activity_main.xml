@@ -7,130 +7,94 @@
     tools:context=".MainActivity">
 
     <android.support.constraint.Guideline
-        android:id="@+id/guideline_60percent"
-        android:layout_width="1dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline_70percent"
-        android:layout_width="1dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7" />
-
-    <ViewFlipper
-        android:id="@+id/view_flipper"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-
-        android:inAnimation="@android:anim/fade_in"
-        app:layout_constraintBottom_toBottomOf="@id/guideline_60percent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginBottom="15dp"
-                android:contentDescription="@string/setup_1_p1_imgDescription"
-                android:src="@drawable/ic_polymer_blue_800_24dp" />
-
-            <TextView
-                style="@style/SetupHeading"
-                android:text="@string/setup_1_p1_heading" />
-
-            <TextView
-                style="@style/SetupBodyText"
-                android:text="@string/setup_1_p1_bodyText" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                style="@style/SetupHeading"
-                android:text="@string/setup_1_p2_heading" />
-
-            <TextView
-                style="@style/SetupBodyText"
-                android:text="@string/setup_1_p2_bodyText" />
-
-        </LinearLayout>
-
-    </ViewFlipper>
+        android:id="@+id/guideline_50percent"
+        style="@style/VerticalGuideline"
+        app:layout_constraintGuide_percent="0.5"/>
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="@id/guideline_70percent"
-        app:layout_constraintTop_toTopOf="@id/guideline_60percent">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_50percent"
+        android:background="@color/colorPrimary">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/back_button_description"
-            android:onClick="previousView"
-            android:src="@drawable/ic_chevron_left"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.545" />
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_left_15percent"
+            style="@style/VerticalGuideline"
+            app:layout_constraintGuide_percent="0.15"/>
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_left_85percent"
+            style="@style/VerticalGuideline"
+            app:layout_constraintGuide_percent="0.85"/>
+
+        <ImageView
+            android:id="@+id/illustration_scan"
+            style="@style/SetupIllustration"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="68dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:background="@android:color/transparent"
-            android:contentDescription="@string/next_button_description"
-            android:onClick="nextView"
-            android:src="@drawable/ic_chevron_right"
+            android:src="@drawable/ic_polymer_blue_800_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.545" />
+
+            app:layout_constraintStart_toEndOf="@id/guideline_left_15percent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_left_85percent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scan_text"
+            style="@style/SetupBodyText"
+            android:textColor="#FFFFFF"
+            android:text="Scan"
+            app:layout_constraintStart_toEndOf="@id/guideline_left_15percent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_left_85percent"
+            app:layout_constraintTop_toBottomOf="@id/illustration_scan"/>
     </android.support.constraint.ConstraintLayout>
 
-
     <android.support.constraint.ConstraintLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:gravity="center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline_70percent">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_50percent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorAccent">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_right_15percent"
+            style="@style/VerticalGuideline"
+            app:layout_constraintGuide_percent="0.15"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_right_85percent"
+            style="@style/VerticalGuideline"
+            app:layout_constraintGuide_percent="0.85"/>
+
+        <ImageView
+            android:id="@+id/illustration_open"
+            style="@style/SetupIllustration"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:text="@string/btn_get_started"
-            android:textColor="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_polymer_blue_800_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintStart_toEndOf="@id/guideline_right_15percent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_right_85percent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/open_text"
+            style="@style/SetupBodyText"
+            android:textColor="#FFFFFF"
+            android:text="Open"
+            app:layout_constraintStart_toEndOf="@id/guideline_right_15percent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_right_85percent"
+            app:layout_constraintTop_toBottomOf="@id/illustration_open"/>
+
+
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

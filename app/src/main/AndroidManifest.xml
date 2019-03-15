@@ -11,15 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SetupScreen4"></activity>
-        <activity android:name=".SetupScreen3" />
-        <activity android:name=".SetupScreen1">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SetupScreen4" />
+        <activity android:name=".SetupScreen3" />
+        <activity android:name=".SetupScreen1" />
         <activity android:name=".SetupScreen2" />
     </application>
 

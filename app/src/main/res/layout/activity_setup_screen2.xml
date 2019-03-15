@@ -23,19 +23,19 @@
 
         <!-- Horizontal guidelines used for view arrangement-->
         <android.support.constraint.Guideline
-            android:id="@+id/guideline_top_layout_horizontal_20percent"
+            android:id="@+id/guideline_top_layout_horizontal_10percent"
             style="@style/HorizontalGuideline"
-            app:layout_constraintGuide_percent="0.2" />
+            app:layout_constraintGuide_percent="0.10" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_top_layout_horizontal_50percent"
+            style="@style/HorizontalGuideline"
+            app:layout_constraintGuide_percent="0.5" />
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline_top_layout_horizontal_60percent"
             style="@style/HorizontalGuideline"
             app:layout_constraintGuide_percent="0.6" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/guideline_top_layout_horizontal_70percent"
-            style="@style/HorizontalGuideline"
-            app:layout_constraintGuide_percent="0.7" />
 
         <!-- Vertical guidelines used for view arrangement-->
         <android.support.constraint.Guideline
@@ -49,28 +49,24 @@
             app:layout_constraintGuide_percent=".9" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/guideline_top_layout_horizontal_60percent"
+            android:id="@+id/illustration"
+            style="@style/SetupIllustration"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_top_layout_horizontal_50percent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_20percent"
+            app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_10percent"
             android:src="@drawable/ic_polymer_blue_800_24dp"
             android:contentDescription="@string/setup_screen_2_p1_imgDescription"/>
 
         <TextView
             android:id="@+id/heading"
             style="@style/SetupHeading"
-            android:layout_height="wrap_content"
             android:text="@string/setup_screen_2_p1_heading"
+            app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_60percent"
             app:layout_constraintStart_toStartOf="@id/guideline_top_layout_vertical_10percent"
-            app:layout_constraintEnd_toEndOf="@id/guideline_top_layout_vertical_90percent"
-            app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_70percent"
-
-            />
+            app:layout_constraintEnd_toEndOf="@id/guideline_top_layout_vertical_90percent" />
 
         <TextView
+            android:id="@+id/body_text"
             style="@style/SetupBodyText"
             android:text="@string/setup_screen_2_p1_bodyText"
             app:layout_constraintTop_toBottomOf="@id/heading"
@@ -82,17 +78,36 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline_70percent">
 
-        <Button
-            style="@style/BtnSetupHighlighted"
-            android:text="Yes, let's do it!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" >
+
+            <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="150dp"
+                style="@style/BtnSetupRegular"
+                android:text="No, I don't own one." />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="150dp"
+                style="@style/BtnSetupHighlighted"
+                android:text="Yes, let's do it!"
+                app:layout_constraintTop_toBottomOf="@id/btn_skip"/>
+        </android.support.constraint.ConstraintLayout>
+
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

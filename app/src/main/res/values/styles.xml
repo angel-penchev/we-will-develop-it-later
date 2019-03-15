@@ -2,43 +2,54 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Heading styling for the app setup -->
-    <style name="SetupHeading" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- General text styling for the app setup screens -->
+    <style name="SetupText">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textSize">21sp</item>
     </style>
 
-    <!-- Body text styling for the app setup -->
-    <style name="SetupBodyText" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textSize">16sp</item>
+
+    <!-- Heading specific styling for the app setup screens -->
+    <style name="SetupHeading" parent="SetupText">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12pt</item>
     </style>
 
-    <style name="BtnSetupRegular" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Body specific text styling for the app setup screens -->
+    <style name="SetupBodyText" parent="SetupText">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">7pt</item>
+    </style>
+
+    <!-- Illustration stylesheet for setup activities -->
+    <style name="SetupIllustration">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+    </style>
+
+    <!-- Button stylesheet for setup activities -->
+    <style name="BtnSetup" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BtnSetupRegular" parent="BtnSetup">
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
-    <style name="BtnSetupHighlighted" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@color/colorPrimary</item>
+    <style name="BtnSetupHighlighted" parent="BtnSetup">
         <item name="android:textColor">@android:color/primary_text_dark</item>
     </style>
 
+
+    <!-- Guideline stylesheet for setup activities -->
     <style name="HorizontalGuideline">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

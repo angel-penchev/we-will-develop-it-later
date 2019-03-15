@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Readability</string>
+    <string name="app_name" translatable="false">Readability</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="setup_1_p1_imgDescription">Readability logo</string>
+    <string name="setup_1_p1_heading">Welcome to Readability</string>
+    <string name="setup_1_p1_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_1_p2_heading">Scan papers with your camera</string>
+    <string name="setup_1_p2_bodyText">As easy as just pointing and shooting when the build-in AI detects and tells you about scannable document. No difficult setup required. </string>
+    <string name="setup_1_p3_heading">Welcome to Readability</string>
+    <string name="setup_1_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="back_button_description">Previous slide</string>
+    <string name="next_button_description">Next slide</string>
 </resources>

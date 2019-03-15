@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Heading styling for the app setup -->
+    <style name="SetupHeading" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">310dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <!-- Body text styling for the app setup -->
+    <style name="SetupBodyText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">310dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--style name-->
+
 </resources>

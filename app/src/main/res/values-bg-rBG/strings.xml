@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Readability</string>
+    <string name="btn_get_started">Да започваме</string>
+    <string name="setup_1_p1_heading">Добре дошли в Readability</string>
+    <string name="setup_1_p1_bodyText">Readability е приложението, което дава възможността на хора с увредено зрение да разчитат принтирани документи по няколко лесни за използване начина.</string>
+    <string name="setup_1_p2_heading">Сканирайте документи с камерата си</string>
+    <string name="setup_1_p1_imgDescription">Лого на Readability</string>
+</resources>

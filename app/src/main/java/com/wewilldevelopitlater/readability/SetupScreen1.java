@@ -3,6 +3,7 @@ package com.wewilldevelopitlater.readability;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.AndroidException;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
@@ -25,10 +26,14 @@ public class SetupScreen1 extends AppCompatActivity {
 
     public void previousView(View v) {
         viewFlipper.showPrevious();
+        viewFlipper.setInAnimation(this, android.R.anim.slide_in_left);
+        viewFlipper.setOutAnimation(this, android.R.anim.slide_out_right);
     }
 
     public void nextView(View v) {
         viewFlipper.showNext();
+        viewFlipper.setInAnimation(this, R.anim.slide_in_right);
+        viewFlipper.setOutAnimation(this, R.anim.side_out_left);
     }
 
     public void nextScreen(View v) {

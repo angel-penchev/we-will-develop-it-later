@@ -24,4 +24,9 @@
     <string name="setup_screen_1_p5_heading">So let\'s get started</string>
     <string name="setup_screen_1_p5_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
 
+    <string name="setup_screen_2_p1_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_2_p1_heading">Do you want to connect a Braille Reader?</string>
+    <string name="setup_screen_2_p1_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
+
 </resources>

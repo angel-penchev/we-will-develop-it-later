@@ -84,7 +84,7 @@
                 app:layout_constraintTop_toBottomOf="@id/body_text"
                 android:layout_marginTop="20dp"/>
 
-            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>
 
@@ -110,8 +110,8 @@
             <Button
                 android:id="@+id/btn_get_started"
                 android:layout_width="150dp"
-                style="@style/BtnSetupHighlighted"
-                android:text="@string/btn_get_started"
+                style="@style/BtnSetupRegular"
+                android:text="Next"
                 android:onClick="nextScreen" />
         </android.support.constraint.ConstraintLayout>
 

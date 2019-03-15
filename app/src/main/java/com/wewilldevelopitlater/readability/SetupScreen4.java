@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class SetupScreen3 extends AppCompatActivity {
+public class SetupScreen4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,7 @@ public class SetupScreen3 extends AppCompatActivity {
     }
 
     public void nextScreen(View v) {
-        Intent intent = new Intent(SetupScreen3.this, SetupScreen4.class);
+        Intent intent = new Intent(SetupScreen4.this, SetupScreen1.class);
         startActivity(intent);
     }
 }

@@ -40,4 +40,8 @@
     <string name="setup_screen_3_heading">Select a narration voice</string>
     <string name="setup_screen_3_bodyText">This voice will be used for reading documents out-loud.</string>
 
+    <string name="setup_screen_4_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_4_heading">You\'re all set!</string>
+    <string name="setup_screen_4_bodyText">Readability has been successfully configured for use. Now the app will enter gesture navigated mode. Hope you enjoy your time using Readability!</string>
+
 </resources>

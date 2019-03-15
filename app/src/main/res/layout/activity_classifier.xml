@@ -62,7 +62,6 @@
 
         <ImageButton
             android:id="@+id/capture"
-            pp:layout_constraintTop_toTopOf="@+id/guideline_bottom_20percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"

@@ -17,11 +17,11 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class MainActivity extends AppCompatActivity {
+public class FetchingActivity extends AppCompatActivity {
     private ViewFlipper viewFlipper;
 
-    Button refreshBtn;
-    ListView devices;
+    private Button refreshBtn;
+    private ListView devices;
 
     private BluetoothAdapter adapter;
     private Set<BluetoothDevice> bluetoothDevices;
@@ -58,11 +58,11 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,deviceNames);
         devices.setAdapter(adapter);
         devices.setOnItemClickListener((parent,view,position,id)->{
-            String info = ((TextView) view).getText().toString();
-            String address = info.substring(info.length() - 17);
 
-            Intent i = new Intent(MainActivity.this,ClassifierActivity.class);
-            i.putExtra(EXTRA,address);
+            BluetoothDevice dev = bluetoothDevices.stream().filter(device->device.getName().equals(deviceNames.get(position))).findFirst().get();
+
+            Intent i = new Intent(FetchingActivity.this,ClassifierActivity.class);
+            i.putExtra(EXTRA,dev.getAddress());
             startActivity(i);
         });
 

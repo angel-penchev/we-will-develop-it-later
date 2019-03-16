@@ -60,7 +60,7 @@
                     android:id="@+id/p1_illustration"
                     style="@style/SetupIllustration"
                     android:contentDescription="@string/setup_screen_1_p1_imgDescription"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_readability_logo"
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p1_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p1_top_layout_horizontal_10percent" />
@@ -119,7 +119,7 @@
                     android:id="@+id/p2_illustration"
                     style="@style/SetupIllustration"
                     android:contentDescription="@string/setup_screen_1_p2_imgDescription"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_phone_capture"
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p2_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p2_top_layout_horizontal_10percent" />
@@ -178,7 +178,7 @@
                     android:id="@+id/p3_illustration"
                     style="@style/SetupIllustration"
                     android:contentDescription="@string/setup_screen_1_p3_imgDescription"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_headphone_voice"
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p3_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p3_top_layout_horizontal_10percent" />
@@ -237,7 +237,7 @@
                     android:id="@+id/p4_illustration"
                     style="@style/SetupIllustration"
                     android:contentDescription="@string/setup_screen_1_p4_imgDescription"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_braille_reader"
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p4_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p4_top_layout_horizontal_10percent" />
@@ -296,7 +296,7 @@
                     android:id="@+id/p5_illustration"
                     style="@style/SetupIllustration"
                     android:contentDescription="@string/setup_screen_1_p5_imgDescription"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_settings"
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p5_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p5_top_layout_horizontal_10percent" />

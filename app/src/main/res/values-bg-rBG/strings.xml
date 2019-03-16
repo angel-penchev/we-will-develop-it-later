@@ -2,8 +2,27 @@
 <resources>
     <string name="app_name">Readability</string>
     <string name="btn_get_started">Да започваме</string>
-    <string name="setup_1_p1_heading">Добре дошли в Readability</string>
-    <string name="setup_1_p1_bodyText">Readability е приложението, което дава възможността на хора с увредено зрение да разчитат принтирани документи по няколко лесни за използване начина.</string>
-    <string name="setup_1_p2_heading">Сканирайте документи с камерата си</string>
-    <string name="setup_1_p1_imgDescription">Лого на Readability</string>
+    <string name="btn_previous_description">Предишен слайд</string>
+    <string name="btn_next_description">Следващ слайд</string>
+
+    <string name="setup_screen_1_p1_imgDescription">Лого на Readability</string>
+    <string name="setup_screen_1_p1_heading">Добре дошли в Readability</string>
+    <string name="setup_screen_1_p1_bodyText">Readability е приложението, което дава възможността на хора с увредено зрение да разчитат принтирани документи по няколко лесни за използване начина.</string>
+
+    <string name="setup_screen_1_p2_imgDescription">Лого на Readability</string>
+    <string name="setup_screen_1_p2_heading">Сканирайте документи с камерата си</string>
+    <string name="setup_screen_1_p2_bodyText">As easy as just pointing and shooting when the build-in AI detects and tells you about scannable document. No difficult setup required. </string>
+
+    <string name="setup_screen_1_p3_imgDescription">Лого на Readability</string>
+    <string name="setup_screen_1_p3_heading">Welcome to Readability</string>
+    <string name="setup_screen_1_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
+    <string name="setup_screen_1_p4_imgDescription">Лого на Readability</string>
+    <string name="setup_screen_1_p4_heading">Welcome to Readability</string>
+    <string name="setup_screen_1_p4_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
+    <string name="setup_screen_1_p5_imgDescription">Лого на Readability</string>
+    <string name="setup_screen_1_p5_heading">Welcome to Readability</string>
+    <string name="setup_screen_1_p5_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
 </resources>

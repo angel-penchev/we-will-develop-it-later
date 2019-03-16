@@ -16,13 +16,21 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".ClassifierActivity"></activity>
+<<<<<<< HEAD
         <activity android:name=".FetchingActivity">
+=======
+        <activity android:name=".MainActivity">
+>>>>>>> master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SetupScreen4" />
+        <activity android:name=".SetupScreen3" />
+        <activity android:name=".SetupScreen1" />
+        <activity android:name=".SetupScreen2" />
     </application>
 
 </manifest>

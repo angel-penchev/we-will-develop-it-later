@@ -9,8 +9,10 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import com.camerakit.CameraKitView;
 
@@ -22,6 +24,7 @@ public class ClassifierActivity extends AppCompatActivity {
     private CameraKitView cameraKitView;
     private ImageView preview;
     private Button capture;
+    private ProgressBar loading;
 
     private BluetoothAdapter adapter;
     private BluetoothSocket socket;
@@ -41,21 +44,10 @@ public class ClassifierActivity extends AppCompatActivity {
         cameraKitView = findViewById(R.id.camera);
         capture = findViewById(R.id.capture);
         preview = findViewById(R.id.preview);
+        loading = findViewById(R.id.progress_loader);
 
         if (socket == null) {
-            AsyncTask.execute(() -> {
-                adapter = BluetoothAdapter.getDefaultAdapter();
-                BluetoothDevice d = adapter.getRemoteDevice(address);
-                try {
-                    socket = d.createInsecureRfcommSocketToServiceRecord(uuid);
-                    socket.connect();
-                    Log.d("socket", "started");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-
-            });
+            new ConnectBT().execute();
         }
 
 
@@ -66,7 +58,7 @@ public class ClassifierActivity extends AppCompatActivity {
 
             if (socket != null) {
                 try {
-                    int data = Integer.parseInt("1011", 2); // Binary representation of the wheels rotation
+                    int data = Integer.parseInt("010010", 2); // Binary representation of the wheels rotation
                     Log.d("writing data", String.valueOf(data));
                     socket.getOutputStream().write(data);
                     Log.d("socket", "connected");
@@ -105,7 +97,33 @@ public class ClassifierActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         cameraKitView.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+
+    private class ConnectBT extends AsyncTask<Void,Void,Void>{
+
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            loading.setVisibility(View.GONE);
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            adapter = BluetoothAdapter.getDefaultAdapter();
+            BluetoothDevice d = adapter.getRemoteDevice(address);
+            try {
+                socket = d.createInsecureRfcommSocketToServiceRecord(uuid);
+                BluetoothAdapter.getDefaultAdapter().cancelDiscovery();
+                socket.connect();
+                Log.d("socket", "started");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
     }
 }

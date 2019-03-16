@@ -20,10 +20,14 @@
         android:id="@+id/preview"
         android:layout_width="137dp"
         android:layout_height="156dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:contentDescription="camera_input"
-        app:srcCompat="@android:drawable/alert_dark_frame"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera"
+        app:srcCompat="@android:drawable/alert_dark_frame" />
 
     <Button
         android:id="@+id/capture"
@@ -36,5 +40,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preview" />
+
+    <ProgressBar
+        android:id="@+id/progress_loader"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/preview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camera" />
 
 </android.support.constraint.ConstraintLayout>

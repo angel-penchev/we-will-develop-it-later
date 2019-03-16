@@ -118,7 +118,6 @@
                         style="@style/BtnSetupHighlighted"
                         android:layout_width="150dp"
                         android:layout_marginBottom="0dp"
-                        android:onClick="nextView"
                         android:text="Yes, let's do it!"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -193,7 +192,7 @@
                     app:layout_constraintEnd_toEndOf="@id/guideline_p2_top_layout_vertical_90percent" />
 
                 <ListView
-                    android:id="@+id/p2_body_text"
+                    android:id="@+id/p2_list"
                     style="@style/SetupBodyText"
                     android:layout_height="0dp"
                     app:layout_constraintEnd_toEndOf="@id/guideline_p2_top_layout_vertical_90percent"

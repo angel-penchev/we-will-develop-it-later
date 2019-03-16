@@ -1,17 +1,16 @@
 package com.wewilldevelopitlater.readability;
 
-<<<<<<< HEAD
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -24,7 +23,7 @@ public class ClassifierActivity extends AppCompatActivity {
 
     private CameraKitView cameraKitView;
     private ImageView preview;
-    private Button capture;
+    private ImageButton capture;
     private ProgressBar loading;
 
     private BluetoothAdapter adapter;
@@ -36,6 +35,7 @@ public class ClassifierActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Log.d("classifier activity", "creates");
         Intent i = getIntent();
         address = i.getStringExtra(FetchingActivity.EXTRA);
         Log.d("got device", address);
@@ -54,6 +54,7 @@ public class ClassifierActivity extends AppCompatActivity {
 
         capture.setOnClickListener(v -> {
             cameraKitView.captureImage((cameraKitView, image) -> {
+                Log.d("image", "captured");
                 preview.setImageBitmap(BitmapFactory.decodeByteArray(image, 0, image.length));
             });
 
@@ -86,14 +87,14 @@ public class ClassifierActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        cameraKitView.onPause();
         super.onPause();
+        cameraKitView.onPause();
     }
 
     @Override
     protected void onStop() {
-        cameraKitView.onStop();
         super.onStop();
+        cameraKitView.onStop();
     }
 
     @Override
@@ -103,7 +104,7 @@ public class ClassifierActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
-    private class ConnectBT extends AsyncTask<Void,Void,Void>{
+    private class ConnectBT extends AsyncTask<Void, Void, Void> {
 
 
         @Override
@@ -126,19 +127,5 @@ public class ClassifierActivity extends AppCompatActivity {
             }
             return null;
         }
-=======
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
-public class ClassifierActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_classifier);
-
-        // Removes the Action Bar from the activity
-        this.getSupportActionBar().hide();
->>>>>>> master
     }
 }

@@ -35,10 +35,10 @@
     </style>
 
     <!-- Button stylesheet for setup activities -->
-    <style name="BtnSetup" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--<style name="BtnSetup" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-    </style>
+    </style>-->
 
     <style name="BtnSetupRegular" parent="BtnSetup">
         <item name="android:textColor">@color/colorPrimary</item>
@@ -60,6 +60,11 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="BtnSetup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
 </resources>

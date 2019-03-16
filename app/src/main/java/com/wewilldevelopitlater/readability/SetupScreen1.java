@@ -1,12 +1,9 @@
 package com.wewilldevelopitlater.readability;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.AndroidException;
-import android.view.Gravity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 public class SetupScreen1 extends AppCompatActivity {
@@ -37,7 +34,7 @@ public class SetupScreen1 extends AppCompatActivity {
     }
 
     public void nextScreen(View v) {
-        Intent intent = new Intent(SetupScreen1.this, SetupScreen2.class);
+        Intent intent = new Intent(SetupScreen1.this, FetchingActivity.class);
         startActivity(intent);
     }
 }

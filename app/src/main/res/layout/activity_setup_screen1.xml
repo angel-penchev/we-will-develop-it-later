@@ -366,12 +366,21 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" >
+
                 <Button
                     android:id="@+id/btn_get_started"
-                    android:layout_width="150dp"
                     style="@style/BtnSetupRegular"
+                    android:layout_width="150dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:onClick="nextScreen"
                     android:text="@string/btn_get_started"
-                    android:onClick="nextScreen" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>

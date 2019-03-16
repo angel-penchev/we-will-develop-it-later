@@ -6,69 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ClassifierActivity">
 
-<<<<<<< HEAD
-    <com.camerakit.CameraKitView
-        android:id="@+id/camera"
-        android:layout_width="match_parent"
-        android:layout_height="393dp"
-        android:layout_marginEnd="8dp"
-        android:adjustViewBounds="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/preview"
-        android:layout_width="137dp"
-        android:layout_height="156dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="camera_input"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/camera"
-        app:srcCompat="@android:drawable/alert_dark_frame" />
 
-    <Button
-        android:id="@+id/capture"
-        android:layout_width="92dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Capture"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preview" />
 
-    <ProgressBar
-        android:id="@+id/progress_loader"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="8dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toStartOf="@+id/preview"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/camera" />
-=======
     <android.support.constraint.Guideline
         android:id="@+id/guideline_80percent"
         style="@style/HorizontalGuideline"
         app:layout_constraintGuide_percent="0.8"/>
 
-    <!--
-    Important notice! : Instead of a "ImageView" element,
-    the line below should contain a "com.camerakit.CameraKitView".
-    However, it requires API 24 to be used which is currently
-    unavailable to be used by my current device (rip Samsung J1 ;-;)
-    TODO: Change the project API to 24 and replace the object below with "com.camerakit.CameraKitView"
-    -->
-    <ImageView
+
+    <com.camerakit.CameraKitView
         android:id="@+id/camera"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -100,6 +47,11 @@
             style="@style/VerticalGuideline"
             app:layout_constraintGuide_percent="0.1"/>
 
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_bottom_90percent"
+            style="@style/VerticalGuideline"
+            app:layout_constraintGuide_percent="0.9" />
+
         <ImageView
             android:id="@+id/preview"
             android:layout_width="wrap_content"
@@ -122,8 +74,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-    </android.support.constraint.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/progress_loader"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_80percent"
+            app:layout_constraintEnd_toEndOf="@id/guideline_bottom_90percent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_bottom_20percent" />
 
->>>>>>> master
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

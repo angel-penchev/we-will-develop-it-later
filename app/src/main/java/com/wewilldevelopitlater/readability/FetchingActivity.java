@@ -3,24 +3,18 @@ package com.wewilldevelopitlater.readability;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.ViewFlipper;
 
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class FetchingActivity extends AppCompatActivity {
-    private ViewFlipper viewFlipper;
 
-    private Button refreshBtn;
     private ListView devices;
 
     private BluetoothAdapter adapter;
@@ -36,10 +30,9 @@ public class FetchingActivity extends AppCompatActivity {
         this.getSupportActionBar().hide();
 
         // Creates the view flipper
-        viewFlipper = findViewById(R.id.view_flipper);
+//        viewFlipper = findViewById(R.id.view_flipper);
 
         devices = findViewById(R.id.devices);
-        refreshBtn = findViewById(R.id.refresh);
 
         adapter = BluetoothAdapter.getDefaultAdapter();
 
@@ -48,7 +41,8 @@ public class FetchingActivity extends AppCompatActivity {
             finish();
         }
 
-        fetchDevices();// TODO: make in async
+        fetchDevices();
+
     }
 
     private void fetchDevices() {
@@ -68,11 +62,5 @@ public class FetchingActivity extends AppCompatActivity {
 
     }
 
-    public void previousView(View v) {
-        viewFlipper.showPrevious();
-    }
 
-    public void nextView(View v) {
-        viewFlipper.showNext();
-    }
 }

@@ -25,4 +25,23 @@
     <string name="setup_screen_1_p5_heading">Така че нека Ви настроим</string>
     <string name="setup_screen_1_p5_bodyText">Какво още чакаме? Нека конфигурираме приложението за ползване.</string>
 
+    <string name="setup_screen_2_p1_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_2_p1_heading">Do you want to connect a Braille Reader?</string>
+    <string name="setup_screen_2_p1_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
+    <string name="setup_screen_2_p2_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_2_p2_heading">Select your device below</string>
+    <string name="setup_screen_2_p2_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
+    <string name="setup_screen_2_p3_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_2_p3_heading">Device connected successfully!</string>
+    <string name="setup_screen_2_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+
+    <string name="setup_screen_3_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_3_heading">Select a narration voice</string>
+    <string name="setup_screen_3_bodyText">This voice will be used for reading documents out-loud.</string>
+
+    <string name="setup_screen_4_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_4_heading">You\'re all set!</string>
+    <string name="setup_screen_4_bodyText">Readability has been successfully configured for use. Now the app will enter gesture navigated mode. Hope you enjoy your time using Readability!</string>
 </resources>

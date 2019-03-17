@@ -54,7 +54,7 @@
                 android:id="@+id/illustration"
                 style="@style/SetupIllustration"
                 android:contentDescription="@string/setup_screen_4_imgDescription"
-                android:src="@drawable/ic_polymer_blue_800_24dp"
+                android:src="@drawable/ic_headphone_voice"
                 app:layout_constraintBottom_toBottomOf="@id/guideline_top_layout_horizontal_50percent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_10percent" />

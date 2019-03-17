@@ -335,6 +335,17 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0dp">
 
+                <!-- Vertical guidelines used for view arrangement-->
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_bottom_layout_vertical_10percent"
+                    style="@style/VerticalGuideline"
+                    app:layout_constraintGuide_percent=".1" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline_bottom_layout_vertical_90percent"
+                    style="@style/VerticalGuideline"
+                    app:layout_constraintGuide_percent=".9" />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -343,7 +354,7 @@
                     android:onClick="previousView"
                     android:src="@drawable/ic_chevron_left"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/guideline_bottom_layout_vertical_10percent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
@@ -355,7 +366,7 @@
                     android:onClick="nextView"
                     android:src="@drawable/ic_chevron_right"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/guideline_bottom_layout_vertical_90percent"
                     app:layout_constraintTop_toTopOf="parent" />
             </android.support.constraint.ConstraintLayout>
 
@@ -369,7 +380,7 @@
 
                 <Button
                     android:id="@+id/btn_get_started"
-                    style="@style/BtnSetupRegular"
+                    style="@style/BtnSetupHighlighted"
                     android:layout_width="150dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"

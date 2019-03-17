@@ -48,4 +48,8 @@
     <string name="setup_screen_4_imgDescription">Илюстрация на тик</string>
     <string name="setup_screen_4_heading">Готови сте!</string>
     <string name="setup_screen_4_bodyText">Readability успешно беше конфигурирано. Сега приложението ще влезе в режим за навигация с жестове. Надяваме се да харесате времето прекарано Readability!</string>
+    <string name="btn_return">Return</string>
+    <string name="open_document_heading">Sooo sorry but this screen is currently unavailable ;-;</string>
+    <string name="main_open_imgDescription">Illustration of a folder</string>
+    <string name="main_scan_imgDescription">Scan</string>
 </resources>

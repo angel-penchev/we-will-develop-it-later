@@ -47,6 +47,13 @@
     <string name="setup_screen_4_imgDescription">Illustration of a tick</string>
     <string name="setup_screen_4_heading">You\'re all set!</string>
     <string name="setup_screen_4_bodyText">Readability has been successfully configured for use. Now the app will enter gesture navigated mode. Hope you enjoy your time using Readability!</string>
+    <string name="btn_return">Return</string>
+    <string name="open_document_heading">Sooo sorry but this screen is currently unavailable ;-;</string>
+    <string name="open_document_body">But heads up, this feature will be comming in shortly</string>
+    <string name="main_scan">Scan</string>
+    <string name="main_open">Open</string>
+    <string name="main_open_imgDescription">Illustration of a folder</string>
+    <string name="main_scan_imgDescription">Scan</string>
 
 
 </resources>

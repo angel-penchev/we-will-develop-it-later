@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FetchingActivity">
+    tools:context=".MainActivity">
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline_50percent"
@@ -16,7 +16,8 @@
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline_50percent"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        android:onClick="scanScreen">
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline_left_15percent"
@@ -37,18 +38,17 @@
             android:layout_marginBottom="0dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_polymer_blue_800_24dp"
+            android:contentDescription="@string/main_scan_imgDescription"
             app:layout_constraintBottom_toBottomOf="parent"
-
             app:layout_constraintStart_toEndOf="@id/guideline_left_15percent"
             app:layout_constraintEnd_toEndOf="@id/guideline_left_85percent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="nextScreen"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/scan_text"
             style="@style/SetupBodyText"
             android:textColor="#FFFFFF"
-            android:text="Scan"
+            android:text="@string/main_scan"
             app:layout_constraintStart_toEndOf="@id/guideline_left_15percent"
             app:layout_constraintEnd_toEndOf="@id/guideline_left_85percent"
             app:layout_constraintTop_toBottomOf="@id/illustration_scan"/>
@@ -59,7 +59,8 @@
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="@id/guideline_50percent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/colorAccent">
+        android:background="@color/colorAccent"
+        android:onClick="openScreen">
 
         <android.support.constraint.Guideline
             android:id="@+id/guideline_right_15percent"
@@ -80,6 +81,7 @@
             android:layout_marginBottom="0dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_polymer_blue_800_24dp"
+            android:contentDescription="@string/main_open_imgDescription"
             app:layout_constraintBottom_toBottomOf="parent"
 
             app:layout_constraintStart_toEndOf="@id/guideline_right_15percent"
@@ -90,7 +92,7 @@
             android:id="@+id/open_text"
             style="@style/SetupBodyText"
             android:textColor="#FFFFFF"
-            android:text="Open"
+            android:text="@string/main_open"
             app:layout_constraintStart_toEndOf="@id/guideline_right_15percent"
             app:layout_constraintEnd_toEndOf="@id/guideline_right_85percent"
             app:layout_constraintTop_toBottomOf="@id/illustration_open"/>

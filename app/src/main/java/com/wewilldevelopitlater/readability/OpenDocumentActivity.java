@@ -1,28 +1,23 @@
 package com.wewilldevelopitlater.readability;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class OpenDocumentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_open_document);
 
         // Removes the Action Bar from the activity
         this.getSupportActionBar().hide();
     }
 
-    public void scanScreen(View v) {
-        Intent intent = new Intent(MainActivity.this, FetchingActivity.class);
-        startActivity(intent);
-    }
-
-    public void openScreen(View v) {
-        Intent intent = new Intent(MainActivity.this, OpenDocumentActivity.class);
+    public void previousScreen(View v) {
+        Intent intent = new Intent(OpenDocumentActivity.this, MainActivity.class);
         startActivity(intent);
     }
 }

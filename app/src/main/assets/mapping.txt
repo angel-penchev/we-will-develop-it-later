@@ -1,26 +1,26 @@
-e
-t
-a
-o
-i
-n
-s
-h
-r
-d
-l
-c
-u
-m
-w
-f
-g
-y
-p
-b
-v
-k
-j
-x
-q
-z
+e 32
+t 74
+a 12
+o 36
+i 23
+n 46
+s 27
+h 34
+r 38
+d 42
+l 18
+c 22
+u 56
+m 26
+w 83
+f 24
+g 44
+y 86
+p 28
+b 14
+v 58
+k 16
+j 43
+x 66
+q 48
+z 76

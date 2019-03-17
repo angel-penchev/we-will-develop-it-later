@@ -70,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
                             String line;
                             while ((line = reader.readLine()) != null) {
                                 String[] split = line.split("=");
+//                                Log.d("split1", split[0]);
+//                                Log.d("split1", split[1]);
                                 brailleMap.put(split[0].charAt(0), split[1]);
                             }
                         } catch (IOException e) {
@@ -80,14 +82,25 @@ public class MainActivity extends AppCompatActivity {
                             int pos = 0;
                             while (pos < firebaseVisionText.getText().length()) {
                                 try {
-                                    socket.getOutputStream().write(brailleMap.get(firebaseVisionText.getText().charAt(pos++)).getBytes());
-                                    Thread.sleep(1000);
+                                    String writing = brailleMap.get(firebaseVisionText.getText().toLowerCase().charAt(pos++));
+                                    if (writing == null) {
+                                        socket.getOutputStream().write("11".getBytes());
+
+                                    } else {
+                                        socket.getOutputStream().write(writing.getBytes()); //fixed for all letter cases
+                                    }
+                                    Log.d("text: ", writing);
                                 } catch (IOException e) {
-                                    e.printStackTrace();
-                                } catch (InterruptedException e) {
                                     e.printStackTrace();
                                 } catch (NullPointerException e) {
                                     e.printStackTrace();
+                                } finally {
+                                    try {
+                                        Thread.sleep(2000);// TODO Made it defined by user
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+
                                 }
                             }
                         }).start();

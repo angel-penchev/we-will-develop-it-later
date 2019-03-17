@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name" translatable="false">Readability</string>
+
     <string name="btn_get_started">Get Started</string>
+    <string name="btn_pair_select_no">No, I don\'t own one.</string>
+    <string name="btn_pair_select_yes">Yes, let\'s do it!</string>
+    <string name="btn_next">Next</string>
+
     <string name="btn_previous_description">Previous slide</string>
     <string name="btn_next_description">Next slide</string>
 
@@ -29,19 +34,19 @@
     <string name="setup_screen_2_p1_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
 
     <string name="setup_screen_2_p2_imgDescription">Illustration of a Braille Reader with a Bluetooth icon</string>
-    <string name="setup_screen_2_p2_heading">Select your device below</string>
-    <string name="setup_screen_2_p2_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_2_p2_heading">Изберете Вашето устройство</string>
 
-    <string name="setup_screen_2_p3_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_2_p3_imgDescription">Illustration of a Braille Reader wit a tick</string>
     <string name="setup_screen_2_p3_heading">Device connected successfully!</string>
-    <string name="setup_screen_2_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_2_p3_bodyText">Congratulations, now you can you the device with this app!</string>
 
-    <string name="setup_screen_3_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_3_imgDescription">Illustration of speech coming out of a headphone</string>
     <string name="setup_screen_3_heading">Select a narration voice</string>
     <string name="setup_screen_3_bodyText">This voice will be used for reading documents out-loud.</string>
 
-    <string name="setup_screen_4_imgDescription">Illustration of a Braille Reader</string>
+    <string name="setup_screen_4_imgDescription">Illustration of a tick</string>
     <string name="setup_screen_4_heading">You\'re all set!</string>
     <string name="setup_screen_4_bodyText">Readability has been successfully configured for use. Now the app will enter gesture navigated mode. Hope you enjoy your time using Readability!</string>
+
 
 </resources>

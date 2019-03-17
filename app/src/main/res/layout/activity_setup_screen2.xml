@@ -103,26 +103,26 @@
                     app:layout_constraintBottom_toBottomOf="parent" >
 
                     <Button
-                        android:id="@+id/btn_skip"
-                        style="@style/BtnSetupRegular"
-                        android:layout_width="150dp"
-                        android:layout_marginTop="0dp"
-                        android:text="No, I don't own one."
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:onClick="nextScreen"/>
-
-                    <Button
                         android:id="@+id/btn_next"
                         style="@style/BtnSetupHighlighted"
                         android:layout_width="150dp"
                         android:layout_marginBottom="0dp"
-                        android:text="Yes, let's do it!"
+                        android:text="@string/btn_pair_select_yes"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/btn_skip" />
+
+                    <Button
+                        android:id="@+id/btn_skip"
+                        style="@style/BtnSetupRegular"
+                        android:layout_width="150dp"
+                        android:layout_marginTop="0dp"
+                        android:text="@string/btn_pair_select_no"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:onClick="nextScreen"/>
                 </android.support.constraint.ConstraintLayout>
 
             </android.support.constraint.ConstraintLayout>
@@ -226,7 +226,7 @@
                         android:layout_width="150dp"
                         android:layout_marginBottom="0dp"
                         android:onClick="nextView"
-                        android:text="Next"
+                        android:text="@string/btn_next"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
@@ -332,7 +332,7 @@
                         android:layout_width="150dp"
                         android:layout_marginBottom="0dp"
                         android:onClick="nextScreen"
-                        android:text="Next"
+                        android:text="@string/btn_next"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />

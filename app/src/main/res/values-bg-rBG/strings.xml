@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Readability</string>
+
     <string name="btn_get_started">Да започваме</string>
+    <string name="btn_pair_select_no">Не, не притежавам такъв.</string>
+    <string name="btn_pair_select_yes">Да, да го направим!!</string>
+    <string name="btn_next">Напред</string>
+
     <string name="btn_previous_description">Предишен слайд</string>
     <string name="btn_next_description">Следващ слайд</string>
 
@@ -25,23 +30,22 @@
     <string name="setup_screen_1_p5_heading">Така че нека Ви настроим</string>
     <string name="setup_screen_1_p5_bodyText">Какво още чакаме? Нека конфигурираме приложението за ползване.</string>
 
-    <string name="setup_screen_2_p1_imgDescription">Illustration of a Braille Reader</string>
-    <string name="setup_screen_2_p1_heading">Do you want to connect a Braille Reader?</string>
-    <string name="setup_screen_2_p1_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_2_p1_imgDescription">Илюстрация на браилов четец с плюс икона</string>
+    <string name="setup_screen_2_p1_heading">Искате ли да свържете браилов четец?</string>
+    <string name="setup_screen_2_p1_bodyText">"Браиловият четец" е устройство, което може да конвертира заснетият текст в механични браилови точки.</string>
 
-    <string name="setup_screen_2_p2_imgDescription">Illustration of a Braille Reader</string>
-    <string name="setup_screen_2_p2_heading">Select your device below</string>
-    <string name="setup_screen_2_p2_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_2_p2_imgDescription">Илюстрация на браилов четец с Bluetooth икона</string>
+    <string name="setup_screen_2_p2_heading">Изберете Вашето устройство</string>
 
-    <string name="setup_screen_2_p3_imgDescription">Illustration of a Braille Reader</string>
-    <string name="setup_screen_2_p3_heading">Device connected successfully!</string>
+    <string name="setup_screen_2_p3_imgDescription">Илюстрация на браилов четец с тик</string>
+    <string name="setup_screen_2_p3_heading">Устройството свързано успешно!</string>
     <string name="setup_screen_2_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
 
-    <string name="setup_screen_3_imgDescription">Illustration of a Braille Reader</string>
-    <string name="setup_screen_3_heading">Select a narration voice</string>
-    <string name="setup_screen_3_bodyText">This voice will be used for reading documents out-loud.</string>
+    <string name="setup_screen_3_imgDescription">Илюстрация на реч излизаща от слушалка</string>
+    <string name="setup_screen_3_heading">Изберете глас на четеца</string>
+    <string name="setup_screen_3_bodyText">Този глас ще се използва за прочит на текстови документи на глас.</string>
 
-    <string name="setup_screen_4_imgDescription">Illustration of a Braille Reader</string>
-    <string name="setup_screen_4_heading">You\'re all set!</string>
-    <string name="setup_screen_4_bodyText">Readability has been successfully configured for use. Now the app will enter gesture navigated mode. Hope you enjoy your time using Readability!</string>
+    <string name="setup_screen_4_imgDescription">Илюстрация на тик</string>
+    <string name="setup_screen_4_heading">Готови сте!</string>
+    <string name="setup_screen_4_bodyText">Readability успешно беше конфигурирано. Сега приложението ще влезе в режим за навигация с жестове. Надяваме се да харесате времето прекарано Readability!</string>
 </resources>

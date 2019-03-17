@@ -9,20 +9,20 @@
     <string name="setup_screen_1_p1_heading">Добре дошли в Readability</string>
     <string name="setup_screen_1_p1_bodyText">Readability е приложението, което дава възможността на хора с увредено зрение да разчитат принтирани документи по няколко лесни за използване начина.</string>
 
-    <string name="setup_screen_1_p2_imgDescription">Лого на Readability</string>
-    <string name="setup_screen_1_p2_heading">Сканирайте документи с камерата си</string>
-    <string name="setup_screen_1_p2_bodyText">As easy as just pointing and shooting when the build-in AI detects and tells you about scannable document. No difficult setup required. </string>
+    <string name="setup_screen_1_p2_imgDescription">Илюстрация на телефон заснемащ текстов документ</string>
+    <string name="setup_screen_1_p2_heading">Сканирайте документи с едно докосване</string>
+    <string name="setup_screen_1_p2_bodyText">Просто насочвате и снимате. Вграденият изкуствен интелект ще конвертира заснетият Ви документ в чист текст. Без трудни инсталации.</string>
 
-    <string name="setup_screen_1_p3_imgDescription">Лого на Readability</string>
-    <string name="setup_screen_1_p3_heading">Welcome to Readability</string>
-    <string name="setup_screen_1_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_1_p3_imgDescription">Илюстрация на реч излизаща от слушалка</string>
+    <string name="setup_screen_1_p3_heading">Текста ще Ви бъде прочетен на глас</string>
+    <string name="setup_screen_1_p3_bodyText">След конвертирането на документа в текст, той лесно може да Ви бъде прочетен с глас по Ваш избор. По-късно в тази настройка ще имате възможност да конфигурирате тази функционалност.</string>
 
-    <string name="setup_screen_1_p4_imgDescription">Лого на Readability</string>
-    <string name="setup_screen_1_p4_heading">Welcome to Readability</string>
-    <string name="setup_screen_1_p4_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_1_p4_imgDescription">Илюстрация на браилов четец</string>
+    <string name="setup_screen_1_p4_heading">Свържете с "Браилов четец"</string>
+    <string name="setup_screen_1_p4_bodyText">"Браиловият четец" е устройство, което може да конвертира заснетият текст в механични браилови точки. Подобно устройство може да бъде свързано чрез Bluetooth</string>
 
-    <string name="setup_screen_1_p5_imgDescription">Лого на Readability</string>
-    <string name="setup_screen_1_p5_heading">Welcome to Readability</string>
-    <string name="setup_screen_1_p5_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_1_p5_imgDescription">Илюстрация на гаечен ключ</string>
+    <string name="setup_screen_1_p5_heading">Така че нека Ви настроим</string>
+    <string name="setup_screen_1_p5_bodyText">Какво още чакаме? Нека конфигурираме приложението за ползване.</string>
 
 </resources>

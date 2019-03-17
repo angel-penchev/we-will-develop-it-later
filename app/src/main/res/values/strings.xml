@@ -8,21 +8,21 @@
     <string name="setup_screen_1_p1_heading">Welcome to Readability</string>
     <string name="setup_screen_1_p1_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
 
-    <string name="setup_screen_1_p2_imgDescription">Readability logo</string>
-    <string name="setup_screen_1_p2_heading">Scan papers with your camera</string>
-    <string name="setup_screen_1_p2_bodyText">As easy as just pointing and shooting when the build-in AI detects and tells you about scannable document. No difficult setup required. </string>
+    <string name="setup_screen_1_p2_imgDescription">Illustration of an phone capturing a text document</string>
+    <string name="setup_screen_1_p2_heading">Scan papers with a snap</string>
+    <string name="setup_screen_1_p2_bodyText">As easy as just pointing and shooting. Тhe build-in AI will convert your captured document to plain text. No difficult setup required.</string>
 
-    <string name="setup_screen_1_p3_imgDescription">Readability logo</string>
+    <string name="setup_screen_1_p3_imgDescription">Illustration of speech coming out of a headphone</string>
     <string name="setup_screen_1_p3_heading">Have the text read to you</string>
-    <string name="setup_screen_1_p3_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_1_p3_bodyText">After the conversion of the document to text, you can easily have it read-back to you in a voice of your choice. Later in this setup you will have the opportunity to configure this functionality.</string>
 
-    <string name="setup_screen_1_p4_imgDescription">Readability logo</string>
-    <string name="setup_screen_1_p4_heading">Pair with a Braille Reader</string>
-    <string name="setup_screen_1_p4_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_1_p4_imgDescription">Illustration of a "Braille Reader"</string>
+    <string name="setup_screen_1_p4_heading">Pair with a "Braille Reader"</string>
+    <string name="setup_screen_1_p4_bodyText">A "Braille Reader" is a device that can convert the captured text to mechanical braille dots. Such a tool could be paired with Bluetooth.</string>
 
-    <string name="setup_screen_1_p5_imgDescription">Readability logo</string>
-    <string name="setup_screen_1_p5_heading">So let\'s get started</string>
-    <string name="setup_screen_1_p5_bodyText">Readability is the app that enables the visually impaired to access and interact with printed documents in several easy-to-use ways.</string>
+    <string name="setup_screen_1_p5_imgDescription">Illustration of a setup wrench</string>
+    <string name="setup_screen_1_p5_heading">So let\'s get ut setup</string>
+    <string name="setup_screen_1_p5_bodyText">So what are we waiting for? Let\'s configure the app so it can be used.</string>
 
     <string name="setup_screen_2_p1_imgDescription">Illustration of a Braille Reader</string>
     <string name="setup_screen_2_p1_heading">Do you want to connect a Braille Reader?</string>

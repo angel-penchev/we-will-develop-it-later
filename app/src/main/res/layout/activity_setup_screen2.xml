@@ -63,7 +63,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p1_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p1_top_layout_horizontal_10percent"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_readability_logo"
                     android:contentDescription="@string/setup_screen_2_p1_imgDescription"/>
 
                 <TextView
@@ -105,6 +105,7 @@
                     <Button
                         android:id="@+id/btn_next"
                         style="@style/BtnSetupHighlighted"
+                        android:onClick="nextView"
                         android:layout_width="150dp"
                         android:layout_marginBottom="0dp"
                         android:text="@string/btn_pair_select_yes"
@@ -180,7 +181,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p2_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p2_top_layout_horizontal_10percent"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_readability_logo"
                     android:contentDescription="@string/setup_screen_2_p2_imgDescription"/>
 
                 <TextView
@@ -192,8 +193,9 @@
                     app:layout_constraintEnd_toEndOf="@id/guideline_p2_top_layout_vertical_90percent" />
 
                 <ListView
-                    android:id="@+id/p2_list"
+                    android:id="@+id/devices"
                     style="@style/SetupBodyText"
+                    android:choiceMode="singleChoice"
                     android:layout_height="0dp"
                     app:layout_constraintEnd_toEndOf="@id/guideline_p2_top_layout_vertical_90percent"
                     app:layout_constraintStart_toStartOf="@id/guideline_p2_top_layout_vertical_10percent"
@@ -287,7 +289,7 @@
                     app:layout_constraintBottom_toBottomOf="@id/guideline_p3_top_layout_horizontal_50percent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/guideline_p3_top_layout_horizontal_10percent"
-                    android:src="@drawable/ic_polymer_blue_800_24dp"
+                    android:src="@drawable/ic_readability_logo"
                     android:contentDescription="@string/setup_screen_2_p3_imgDescription"/>
 
                 <TextView

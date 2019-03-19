@@ -37,7 +37,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_polymer_blue_800_24dp"
+            android:src="@drawable/ic_readability_logo"
             android:contentDescription="@string/main_scan_imgDescription"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/guideline_left_15percent"
@@ -80,7 +80,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_polymer_blue_800_24dp"
+            android:src="@drawable/ic_readability_logo"
             android:contentDescription="@string/main_open_imgDescription"
             app:layout_constraintBottom_toBottomOf="parent"
 

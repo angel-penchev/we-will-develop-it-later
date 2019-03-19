@@ -4,7 +4,7 @@
     package="com.wewilldevelopitlater.readability">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permisgision android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:allowBackup="true"
@@ -12,22 +12,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".OpenDocumentActivity"></activity>
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".OpenDocumentActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FetchingActivity" />
+        <activity android:name=".ClassifierActivity" />
+        <activity android:name=".SetupScreen1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FetchingActivity" />
-        <activity android:name=".ClassifierActivity" />
+        <activity android:name=".SetupScreen2" />
         <activity android:name=".SetupScreen4" />
         <activity android:name=".SetupScreen3" />
-        <activity android:name=".SetupScreen1" />
-        <activity android:name=".SetupScreen2" />
     </application>
 
 </manifest>

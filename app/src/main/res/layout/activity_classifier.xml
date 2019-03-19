@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:contentDescription="Capture"
-            android:src="@drawable/ic_polymer_blue_800_24dp"
+            android:src="@drawable/ic_readability_logo"
             app:layout_constraintTop_toTopOf="@+id/guideline_bottom_20percent"
             app:layout_constraintBottom_toBottomOf="@id/guideline_bottom_80percent"
             app:layout_constraintEnd_toEndOf="parent"

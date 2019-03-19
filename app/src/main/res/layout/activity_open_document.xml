@@ -58,7 +58,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/guideline_p1_top_layout_horizontal_50percent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/guideline_p1_top_layout_horizontal_10percent"
-                android:src="@drawable/ic_polymer_blue_800_24dp"
+                android:src="@drawable/ic_readability_logo"
                 android:contentDescription="@string/setup_screen_2_p1_imgDescription"/>
 
             <TextView

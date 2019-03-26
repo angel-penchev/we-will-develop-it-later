@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SetupScreen1">
+    tools:context=".SetupActivity2">
 
     <ViewFlipper
         android:id="@+id/setup_screen_2_view_flipper"
@@ -128,7 +128,7 @@
 
             </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
-        
+
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">

@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class SetupScreen2 extends AppCompatActivity {
+public class SetupActivity2 extends AppCompatActivity {
     private ViewFlipper viewFlipper;
     public static final String PREFS = "BluetoothPrefs";
     public static final String ADDRESS = "address";
@@ -32,7 +32,7 @@ public class SetupScreen2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setup_screen2);
+        setContentView(R.layout.activity_setup2);
 
         // Removes the Action Bar from the activity
         this.getSupportActionBar().hide();
@@ -66,7 +66,7 @@ public class SetupScreen2 extends AppCompatActivity {
     }
 
     public void nextScreen(View v) {
-        Intent intent = new Intent(SetupScreen2.this, SetupScreen3.class);
+        Intent intent = new Intent(SetupActivity2.this, SetupActivity3.class);
         startActivity(intent);
     }
 
@@ -74,13 +74,14 @@ public class SetupScreen2 extends AppCompatActivity {
         bluetoothDevices = adapter.getBondedDevices();
         List<String> deviceNames = bluetoothDevices.stream().map(BluetoothDevice::getName).collect(Collectors.toList());
 
+        // Lists the paired bluetooth devices
         ArrayAdapter<String> listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, deviceNames);
         devices.setAdapter(listAdapter);
 
         devices.setOnItemClickListener((parent, view, position, id) -> {
-            // 
+            // Creates the bluetooth object
             BluetoothDevice reader = bluetoothDevices.stream().filter(device -> device.getName().equals(deviceNames.get(position))).findFirst().get();
-            
+
             // Storing the reader's MAC address in the "Shared Preferences"
             SharedPreferences prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();

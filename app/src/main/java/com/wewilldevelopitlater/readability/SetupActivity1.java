@@ -6,13 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ViewFlipper;
 
-public class SetupScreen1 extends AppCompatActivity {
+public class SetupActivity1 extends AppCompatActivity {
     private ViewFlipper viewFlipper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_setup_screen1);
+        setContentView(R.layout.activity_setup1);
 
         // Removes the Action Bar from the activity
         this.getSupportActionBar().hide();
@@ -34,7 +34,7 @@ public class SetupScreen1 extends AppCompatActivity {
     }
 
     public void nextScreen(View v) {
-        Intent intent = new Intent(SetupScreen1.this, SetupScreen2.class);
+        Intent intent = new Intent(SetupActivity1.this, SetupActivity2.class);
         startActivity(intent);
     }
 }

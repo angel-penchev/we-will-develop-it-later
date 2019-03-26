@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SetupScreen4">
+    tools:context=".SetupActivity3">
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline_80percent"
@@ -54,7 +54,7 @@
                 android:id="@+id/illustration"
                 style="@style/SetupIllustration"
                 android:contentDescription="@string/setup_screen_4_imgDescription"
-                android:src="@drawable/ic_readability_logo"
+                android:src="@drawable/ic_headphone_voice"
                 app:layout_constraintBottom_toBottomOf="@id/guideline_top_layout_horizontal_50percent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_10percent" />
@@ -62,7 +62,7 @@
             <TextView
                 android:id="@+id/heading"
                 style="@style/SetupHeading"
-                android:text="@string/setup_screen_4_heading"
+                android:text="@string/setup_screen_3_heading"
                 app:layout_constraintEnd_toEndOf="@id/guideline_top_layout_vertical_90percent"
                 app:layout_constraintStart_toStartOf="@id/guideline_top_layout_vertical_10percent"
                 app:layout_constraintTop_toTopOf="@id/guideline_top_layout_horizontal_60percent" />
@@ -70,7 +70,7 @@
             <TextView
                 android:id="@+id/body_text"
                 style="@style/SetupBodyText"
-                android:text="@string/setup_screen_4_bodyText"
+                android:text="@string/setup_screen_3_bodyText"
                 app:layout_constraintEnd_toEndOf="@id/guideline_top_layout_vertical_90percent"
                 app:layout_constraintStart_toStartOf="@id/guideline_top_layout_vertical_10percent"
                 app:layout_constraintTop_toBottomOf="@id/heading" />
@@ -110,8 +110,8 @@
             <Button
                 android:id="@+id/btn_get_started"
                 android:layout_width="150dp"
-                style="@style/BtnSetupRegular"
-                android:text="Next"
+                style="@style/BtnSetupHighlighted"
+                android:text="@string/btn_get_started"
                 android:onClick="nextScreen" />
         </android.support.constraint.ConstraintLayout>
 

@@ -12,20 +12,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SetupActivity4" />
+        <activity android:name=".SetupActivity1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SetupActivity2" />
+        <activity android:name=".SetupActivity3" />
         <activity android:name=".OpenDocumentActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".FetchingActivity" />
         <activity android:name=".ClassifierActivity" />
-        <activity android:name=".SetupScreen1">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".SetupScreen2" />
-        <activity android:name=".SetupScreen4" />
-        <activity android:name=".SetupScreen3" />
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SetupScreen1">
+    tools:context=".SetupActivity1">
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline_80percent"
@@ -331,68 +331,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline_80percent">
 
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="fill_parent"
-                android:layout_height="0dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
 
-                <!-- Vertical guidelines used for view arrangement-->
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline_bottom_layout_vertical_10percent"
-                    style="@style/VerticalGuideline"
-                    app:layout_constraintGuide_percent=".1" />
+            <!-- Vertical guidelines used for view arrangement-->
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline_bottom_layout_vertical_10percent"
+                style="@style/VerticalGuideline"
+                app:layout_constraintGuide_percent=".1" />
 
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline_bottom_layout_vertical_90percent"
-                    style="@style/VerticalGuideline"
-                    app:layout_constraintGuide_percent=".9" />
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline_bottom_layout_vertical_90percent"
+                style="@style/VerticalGuideline"
+                app:layout_constraintGuide_percent=".9" />
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="@string/btn_previous_description"
-                    android:onClick="previousView"
-                    android:src="@drawable/ic_chevron_left"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/guideline_bottom_layout_vertical_10percent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="@string/btn_next_description"
-                    android:onClick="nextView"
-                    android:src="@drawable/ic_chevron_right"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/guideline_bottom_layout_vertical_90percent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </android.support.constraint.ConstraintLayout>
-
-            <android.support.constraint.ConstraintLayout
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" >
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/btn_previous_description"
+                android:onClick="previousView"
+                android:src="@drawable/ic_chevron_left"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline_bottom_layout_vertical_10percent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
-                    android:id="@+id/btn_get_started"
-                    style="@style/BtnSetupHighlighted"
-                    android:layout_width="150dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:onClick="nextScreen"
-                    android:text="@string/btn_get_started"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </android.support.constraint.ConstraintLayout>
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/btn_next_description"
+                android:onClick="nextView"
+                android:src="@drawable/ic_chevron_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guideline_bottom_layout_vertical_90percent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" >
+
+            <Button
+                android:id="@+id/btn_get_started"
+                style="@style/BtnSetupHighlighted"
+                android:layout_width="150dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:onClick="nextScreen"
+                android:text="@string/btn_get_started"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
 
     </android.support.constraint.ConstraintLayout>
 

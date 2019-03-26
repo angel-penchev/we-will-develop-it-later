@@ -78,12 +78,13 @@ public class SetupScreen2 extends AppCompatActivity {
         devices.setAdapter(listAdapter);
 
         devices.setOnItemClickListener((parent, view, position, id) -> {
-
-            BluetoothDevice dev = bluetoothDevices.stream().filter(device -> device.getName().equals(deviceNames.get(position))).findFirst().get();
-
+            // 
+            BluetoothDevice reader = bluetoothDevices.stream().filter(device -> device.getName().equals(deviceNames.get(position))).findFirst().get();
+            
+            // Storing the reader's MAC address in the "Shared Preferences"
             SharedPreferences prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();
-            editor.putString(ADDRESS, dev.getAddress());
+            editor.putString("macAddressReader", reader.getAddress());
             editor.apply();
         });
 
